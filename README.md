@@ -19,7 +19,8 @@ Source code and data for the article (Anton Golubev and Natalia Loukachevitch, A
 * matplotlib
 * seaborn
 
-## Step 1: prepare datasets
+## Step 1: prepare data
+Datasets are already preprocessed and cleaned. If you are interested in raw data, corresponding links are provided in the article.
 
 ### SentiHood
 
