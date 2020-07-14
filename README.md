@@ -72,4 +72,4 @@ python evaluate_all_problems.py \
 --tasks 'QA_M NLI_M single QA_B NLI_B'
 ```
 
-After evaluating a table with chosen methods and all necessary metrics will be printed.
+A table with chosen methods and all necessary metrics will be printed after evaluation. 
