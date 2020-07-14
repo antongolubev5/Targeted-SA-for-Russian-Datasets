@@ -1,6 +1,6 @@
-# ABSA as a Sentence Pair Classification Task
+# Improving Results on Russian Sentiment Datasets
 
-Codes and corpora for paper "Utilizing BERT for Aspect-Based Sentiment Analysis via Constructing Auxiliary Sentence" (NAACL 2019)
+Source code and data for the same article (Anton Golubev and Natalia Loukachevitch, AINL 2020)
 
 ## Requirement
 
