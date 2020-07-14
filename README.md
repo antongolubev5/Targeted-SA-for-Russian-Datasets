@@ -20,7 +20,12 @@ Source code and data for the article (Anton Golubev & Natalia Loukachevitch, AIN
 ## Step 1: data preparation
 All 5 datasets are already cleaned and preprocessed. If you are interested in raw data, corresponding links are provided in the article.
 
-Run following command to prepare or tasks any dataset from following:
+Run following command to prepare for tasks any dataset from following:
+
+| Dataset       | Second Header |
+| ------------- | ------------- |
+| News Quotes ROMIP-2013  | romip_2012  |
+| Content Cell  | Content Cell  |
 
 ```
 python csv2json.py --dataset *name*
