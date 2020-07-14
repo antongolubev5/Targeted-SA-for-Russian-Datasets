@@ -20,7 +20,6 @@ Source code and data for the article (Anton Golubev & Natalia Loukachevitch, AIN
 ## Step 1: data preparation
 All 5 datasets are already cleaned and preprocessed. If you are interested in raw data, corresponding links are provided in the article.
 
-Run following command to prepare for tasks any dataset from following:
 
 | Dataset       | Parameter |
 | ------------- | ------------- |
@@ -29,6 +28,8 @@ Run following command to prepare for tasks any dataset from following:
 | SentiRuEval-2015 Banks  | sentirueval_2015_banks  |
 | SentiRuEval-2016 Telecom  | sentirueval_2016_telecom  |
 | SentiRuEval-2016 Banks  | sentirueval_2016_banks  |
+
+Run following command to prepare for tasks any dataset from table:
 
 
 ```
