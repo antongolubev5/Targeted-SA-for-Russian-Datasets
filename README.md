@@ -20,11 +20,10 @@ Source code and data for the article (Anton Golubev & Natalia Loukachevitch, AIN
 ## Step 1: data preparation
 All 5 datasets are already cleaned and preprocessed. If you are interested in raw data, corresponding links are provided in the article.
 
-Run following commands to prepare datasets for tasks:
+Run following command to prepare or tasks any dataset from following:
 
 ```
-cd generate/
-bash make.sh sentihood
+python csv2json.py --dataset *name*
 ```
 
 ## Step 2: prepare BERT-pytorch-model
