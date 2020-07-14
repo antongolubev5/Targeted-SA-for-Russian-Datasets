@@ -1,6 +1,6 @@
 # Improving Results on Russian Sentiment Datasets
 
-Source code and data for the same article (Anton Golubev and Natalia Loukachevitch, AINL 2020)
+Source code and data for the article (Anton Golubev and Natalia Loukachevitch, AINL 2020)
 
 ## Requirement
 
