@@ -14,6 +14,7 @@ Source code and data for the article (Anton Golubev and Natalia Loukachevitch, A
 * os
 * tqdm
 * json
+* xml
 * collections
 * matplotlib
 * seaborn
