@@ -60,3 +60,14 @@ python convert_tf_checkpoint_to_pytorch.py \
 ```
 
 ## Step 4: training and evaluation
+
+Model training and testing are combined into one script with the ability to test several methods. For example:
+
+```
+python evaluate_all_problems.py \
+--bert_model 'ru_conversational_cased_L-12_H-768_A-12' \
+--train_batch_size 12 \
+--num_train_epochs 2.0 \
+--train_models True \
+--tasks 'QA_M NLI_M single QA_B NLI_B'
+```
