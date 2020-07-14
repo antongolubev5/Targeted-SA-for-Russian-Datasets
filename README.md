@@ -50,13 +50,13 @@ bash make.sh rambler2011_json
 
 Download [RuBERT or Conversational RuBERT model](http://docs.deeppavlov.ai/en/master/features/models/bert.html) and then convert a tensorflow checkpoint to a pytorch model.
 
-For example:
+By the example of Conversational RuBERT:
 
 ```
 python convert_tf_checkpoint_to_pytorch.py \
---tf_checkpoint_path uncased_L-12_H-768_A-12/bert_model.ckpt \
---bert_config_file uncased_L-12_H-768_A-12/bert_config.json \
---pytorch_dump_path uncased_L-12_H-768_A-12/pytorch_model.bin
+--tf_checkpoint_path ru_conversational_cased_L-12_H-768_A-12/bert_model.ckpt \
+--bert_config_file ru_conversational_cased_L-12_H-768_A-12/bert_config.json \
+--pytorch_dump_path ru_conversational_cased_L-12_H-768_A-12/pytorch_model.bin
 ```
 
 ## Step 4: train
