@@ -37,10 +37,9 @@ python csv2json.py --dataset parameter
 ```
 
 ## Step 2: creating samples
-All 5 datasets are already cleaned and preprocessed. If you are interested in raw data, corresponding links are provided in the article.
+Now you need to create samples by converting data to a special format for submission to BERT model.
 
 Run following commands to create samples for tasks:
-
 
 ```
 cd generate/
