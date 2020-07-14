@@ -36,23 +36,15 @@ Run following command to prepare for tasks any dataset from table:
 python csv2json.py --dataset parameter
 ```
 
-## Step 2: data preparation
+## Step 2: creating samples
 All 5 datasets are already cleaned and preprocessed. If you are interested in raw data, corresponding links are provided in the article.
 
-
-| Dataset       | Parameter |
-| ------------- | ------------- |
-| News Quotes ROMIP-2013  | romip_2012  |
-| SentiRuEval-2015 Telecom  | sentirueval_2015_telecom  |
-| SentiRuEval-2015 Banks  | sentirueval_2015_banks  |
-| SentiRuEval-2016 Telecom  | sentirueval_2016_telecom  |
-| SentiRuEval-2016 Banks  | sentirueval_2016_banks  |
-
-Run following command to prepare for tasks any dataset from table:
+Run following commands to create samples for tasks:
 
 
 ```
-python csv2json.py --dataset parameter
+cd generate/
+bash make.sh rambler2011_json
 ```
 
 ## Step 3: prepare BERT-pytorch-model
