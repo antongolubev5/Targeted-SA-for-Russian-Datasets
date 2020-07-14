@@ -36,7 +36,26 @@ Run following command to prepare for tasks any dataset from table:
 python csv2json.py --dataset parameter
 ```
 
-## Step 2: prepare BERT-pytorch-model
+## Step 2: data preparation
+All 5 datasets are already cleaned and preprocessed. If you are interested in raw data, corresponding links are provided in the article.
+
+
+| Dataset       | Parameter |
+| ------------- | ------------- |
+| News Quotes ROMIP-2013  | romip_2012  |
+| SentiRuEval-2015 Telecom  | sentirueval_2015_telecom  |
+| SentiRuEval-2015 Banks  | sentirueval_2015_banks  |
+| SentiRuEval-2016 Telecom  | sentirueval_2016_telecom  |
+| SentiRuEval-2016 Banks  | sentirueval_2016_banks  |
+
+Run following command to prepare for tasks any dataset from table:
+
+
+```
+python csv2json.py --dataset parameter
+```
+
+## Step 3: prepare BERT-pytorch-model
 
 Download [BERT-Base (Google's pre-trained models)](https://github.com/google-research/bert) and then convert a tensorflow checkpoint to a pytorch model.
 
@@ -49,7 +68,7 @@ python convert_tf_checkpoint_to_pytorch.py \
 --pytorch_dump_path uncased_L-12_H-768_A-12/pytorch_model.bin
 ```
 
-## Step 3: train
+## Step 4: train
 
 For example, **BERT-pair-NLI_M** task on **SentiHood** dataset:
 
@@ -75,7 +94,7 @@ Note:
 * For SentiHood, `--task_name` must be chosen in `sentihood_NLI_M`, `sentihood_QA_M`, `sentihood_NLI_B`, `sentihood_QA_B` and `sentihood_single`. And for `sentihood_single` task, 8 different tasks (use datasets generated in step 1, see directory `data/sentihood/bert-single`) should be trained separately and then evaluated together.
 * For SemEval-2014, `--task_name` must be chosen in `semeval_NLI_M`, `semeval_QA_M`, `semeval_NLI_B`, `semeval_QA_B` and `semeval_single`. And for `semeval_single` task, 5 different tasks (use datasets generated in step 1, see directory : `data/semeval2014/bert-single`) should be trained separately and then evaluated together.
 
-## Step 4: evaluation
+## Step 5: evaluation
 
 Evaluate the results on test set (calculate Acc, F1, etc.).
 
