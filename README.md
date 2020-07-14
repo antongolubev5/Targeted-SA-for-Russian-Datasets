@@ -2,7 +2,7 @@
 
 Source code and data for the article (Anton Golubev and Natalia Loukachevitch, AINL 2020)
 
-## Requirement
+## Requirements
 
 * pytorch: 1.0.0
 * python: 3.7.1
@@ -10,6 +10,13 @@ Source code and data for the article (Anton Golubev and Natalia Loukachevitch, A
 * numpy: 1.15.4
 * nltk
 * sklearn
+* pandas
+* os
+* tqdm
+* json
+* collections
+* matplotlib
+* seaborn
 
 ## Step 1: prepare datasets
 
