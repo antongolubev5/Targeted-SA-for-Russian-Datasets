@@ -20,7 +20,7 @@ Source code and data for the article (Anton Golubev and Natalia Loukachevitch, A
 * seaborn
 
 ## Step 1: prepare data
-Datasets are already preprocessed and cleaned. If you are interested in raw data, corresponding links are provided in the article.
+All 5 datasets are already preprocessed and cleaned. If you are interested in raw data, corresponding links are provided in the article.
 
 ### SentiHood
 
