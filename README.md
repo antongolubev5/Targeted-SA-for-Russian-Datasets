@@ -22,13 +22,17 @@ All 5 datasets are already cleaned and preprocessed. If you are interested in ra
 
 Run following command to prepare for tasks any dataset from following:
 
-| Dataset       | Second Header |
+| Dataset       | Parameter |
 | ------------- | ------------- |
 | News Quotes ROMIP-2013  | romip_2012  |
-| Content Cell  | Content Cell  |
+| SentiRuEval-2015 Telecom  | sentirueval_2015_telecom  |
+| SentiRuEval-2015 Banks  | sentirueval_2015_banks  |
+| SentiRuEval-2016 Telecom  | sentirueval_2016_telecom  |
+| SentiRuEval-2016 Banks  | sentirueval_2016_banks  |
+
 
 ```
-python csv2json.py --dataset *name*
+python csv2json.py --dataset parameter
 ```
 
 ## Step 2: prepare BERT-pytorch-model
