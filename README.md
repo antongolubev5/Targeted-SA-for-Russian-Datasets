@@ -61,7 +61,7 @@ python convert_tf_checkpoint_to_pytorch.py \
 
 ## Step 4: training and evaluation
 
-Model training and testing are combined into one script with the ability to test several methods. For example:
+Model training and testing are combined into one python script with the ability to test several methods. For example:
 
 ```
 python evaluate_all_problems.py \
@@ -71,3 +71,5 @@ python evaluate_all_problems.py \
 --train_models True \
 --tasks 'QA_M NLI_M single QA_B NLI_B'
 ```
+
+Some time after executing command, a table with evaluated methods and all necessary metrics will be printed.
