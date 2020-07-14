@@ -22,26 +22,11 @@ Source code and data for the article (Anton Golubev & Natalia Loukachevitch, AIN
 ## Step 1: data preparation
 All 5 datasets are already cleaned and preprocessed. If you are interested in raw data, corresponding links are provided in the article.
 
-### SentiHood
-
-Since the link given in the [dataset released paper](<http://www.aclweb.org/anthology/C16-1146>) has failed, we use the [dataset mirror](<https://github.com/uclmr/jack/tree/master/data/sentihood>) listed in [NLP-progress](https://github.com/sebastianruder/NLP-progress/blob/master/english/sentiment_analysis.md) and fix some mistakes (there are duplicate aspect data in several sentences). See directory: `data/sentihood/`.
-
 Run following commands to prepare datasets for tasks:
 
 ```
 cd generate/
 bash make.sh sentihood
-```
-
-### SemEval 2014
-
-Train Data is available in [SemEval-2014 ABSA Restaurant Reviews - Train Data](http://metashare.ilsp.gr:8080/repository/browse/semeval-2014-absa-restaurant-reviews-train-data/479d18c0625011e38685842b2b6a04d72cb57ba6c07743b9879d1a04e72185b8/) and Gold Test Data is available in [SemEval-2014 ABSA Test Data - Gold Annotations](http://metashare.ilsp.gr:8080/repository/browse/semeval-2014-absa-test-data-gold-annotations/b98d11cec18211e38229842b2b6a04d77591d40acd7542b7af823a54fb03a155/). See directory: `data/semeval2014/`.
-
-Run following commands to prepare datasets for tasks:
-
-```
-cd generate/
-bash make.sh semeval
 ```
 
 ## Step 2: prepare BERT-pytorch-model
