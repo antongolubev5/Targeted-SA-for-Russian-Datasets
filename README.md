@@ -15,9 +15,6 @@ Source code and data for the article (Anton Golubev & Natalia Loukachevitch, AIN
 * tqdm
 * json
 * xml
-* collections
-* matplotlib
-* seaborn
 
 ## Step 1: data preparation
 All 5 datasets are already cleaned and preprocessed. If you are interested in raw data, corresponding links are provided in the article.
