@@ -21,7 +21,7 @@ Source code and data for the article (Anton Golubev & Natalia Loukachevitch, AIN
 All 5 datasets are already cleaned and preprocessed. If you are interested in raw data, corresponding links are provided in the article.
 
 
-| Dataset       | Parameter |
+| Dataset       | Name |
 | ------------- | ------------- |
 | News Quotes ROMIP-2013  | romip_2012  |
 | SentiRuEval-2015 Telecom  | sentirueval_2015_telecom  |
@@ -33,7 +33,7 @@ Run following command to prepare for tasks any dataset from table:
 
 
 ```
-python csv2json.py --dataset parameter
+python csv2json.py --dataset name
 ```
 
 ## Step 2: creating samples
