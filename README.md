@@ -65,11 +65,11 @@ Model training and testing are combined into one python script with the ability 
 
 ```
 python evaluate_all_problems.py \
---bert_model 'ru_conversational_cased_L-12_H-768_A-12' \
+--bert_model ru_conversational_cased_L-12_H-768_A-12 \
 --train_batch_size 12 \
 --num_train_epochs 2.0 \
 --train_models True \
---tasks 'QA_M NLI_M single QA_B NLI_B'
+--tasks QA_M NLI_M single QA_B NLI_B
 ```
 
 A table with chosen methods and all necessary metrics will be printed after evaluation. 
