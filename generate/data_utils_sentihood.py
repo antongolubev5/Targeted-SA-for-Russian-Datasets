@@ -42,18 +42,18 @@ def load_task(data_dir, aspect2idx):
     return (train, train_aspect_idx), (dev, dev_aspect_idx), (test, test_aspect_idx)
 
 
-def load_task_rambler2011_json(data_dir, aspect2idx):
+def load_task_dataset(data_dir, aspect2idx):
     """
     загрузка и предобработка исходных данных. На выходе для каждой части выборки кортеж вида
     ([sent_id, [токенизированный текст], маска loc1/loc2, [aspect], polarity], np.array(подряд номера аспектов (0123))
     """
-    in_file = os.path.join(data_dir, 'rambler2011-train.json')
+    in_file = os.path.join(data_dir, 'dataset-train.json')
     train = parse_sentihood_json(in_file)
 
-    in_file = os.path.join(data_dir, 'rambler2011-dev.json')
+    in_file = os.path.join(data_dir, 'dataset-dev.json')
     dev = parse_sentihood_json(in_file)
 
-    in_file = os.path.join(data_dir, 'rambler2011-test.json')
+    in_file = os.path.join(data_dir, 'dataset-test.json')
     test = parse_sentihood_json(in_file)
 
     train = convert_input(train, aspect2idx)
