@@ -45,8 +45,8 @@ def main():
         run_classifier_TABSA_parameters = \
             ['python',
              'run_classifier_TABSA.py',
-             '--task_name rambler2011_json_' + task,
-             '--data_dir data/rambler2011_json/bert-' + data_dir,
+             '--task_name dataset_' + task,
+             '--data_dir data/dataset/bert-' + data_dir,
              '--vocab_file ' + args.bert_model + '/vocab.txt',
              '--bert_config_file ' + args.bert_model + '/bert_config.json',
              '--init_checkpoint=' + args.bert_model + '/pytorch_model.bin',
@@ -56,23 +56,23 @@ def main():
              '--train_batch_size ' + str(args.train_batch_size),
              '--learning_rate 2e-5',
              '--num_train_epochs ' + str(args.num_train_epochs),
-             '--output_dir results/rambler2011_json/' + task,
+             '--output_dir results/dataset/' + task,
              '--seed 42']
         if args.train_models:
             os.system(' '.join(run_classifier_TABSA_parameters))
 
-        results_df = pd.read_csv(os.path.join('results/rambler2011_json', task, 'log.txt'), sep='\t')
+        results_df = pd.read_csv(os.path.join('results/dataset', task, 'log.txt'), sep='\t')
         best_epoch_id = results_df['test_loss'].argmax()
 
         evaluate_parameters = \
             ['python',
              'evaluation.py',
-             '--task_name rambler2011_json_' + task,
-             '--pred_data_dir results/rambler2011_json/' + task + '/test_ep_' + str(best_epoch_id + 1) + '.txt']
+             '--task_name dataset_' + task,
+             '--pred_data_dir results/dataset/' + task + '/test_ep_' + str(best_epoch_id + 1) + '.txt']
         os.system(' '.join(evaluate_parameters))
 
         results_task = dict()
-        with open(os.path.join('results/rambler2011_json', task, 'metrics.txt')) as f_results:
+        with open(os.path.join('results/dataset', task, 'metrics.txt')) as f_results:
             for line in f_results:
                 results_task[line.strip().split('\t')[0]] = line.strip().split('\t')[1]
 

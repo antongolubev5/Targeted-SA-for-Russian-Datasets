@@ -12,7 +12,7 @@ def create_sample(directory_path, contexts, sample_type: str):
     contexts_file_name - имя исходного csv-файла с данными
     sample_type - train/test/val выборка
     """
-    json_file = open(os.path.join(directory_path, 'rambler2011' + '-' + sample_type + '.json'), 'w')
+    json_file = open(os.path.join(directory_path, 'dataset' + '-' + sample_type + '.json'), 'w')
     json_contexts = []
 
     for i in tqdm(range(len(contexts))):
@@ -53,7 +53,7 @@ def main():
     test = pd.read_csv(os.path.join('preprocessed_data', args.dataset, 'test.csv'), sep='\t')
 
     for sample, name in [(test, 'test'), (test, 'dev'), (train, 'train')]:
-        create_sample('data/rambler2011_json', sample, name)
+        create_sample('data/dataset', sample, name)
 
 
 if __name__ == "__main__":

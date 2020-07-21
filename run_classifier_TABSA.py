@@ -21,9 +21,9 @@ from tqdm import tqdm, trange
 import tokenization
 from modeling import BertConfig, BertForSequenceClassification
 from optimization import BERTAdam
-from processor import (Rambler2011_json_single_Processor, Rambler2011_json_NLI_M_Processor,
-                       Rambler2011_json_QA_M_Processor, Rambler2011_json_NLI_B_Processor,
-                       Rambler2011_json_QA_B_Processor)
+from processor import (Dataset_single_Processor, Dataset_NLI_M_Processor,
+                       Dataset_QA_M_Processor, Dataset_NLI_B_Processor,
+                       Dataset_QA_B_Processor)
 
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(name)s -   %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S',
@@ -157,8 +157,8 @@ def main():
                         default=None,
                         type=str,
                         required=True,
-                        choices=["rambler2011_json_single", "rambler2011_json_NLI_M", "rambler2011_json_QA_M",
-                                 "rambler2011_json_NLI_B", "rambler2011_json_QA_B"],
+                        choices=["dataset_single", "dataset_NLI_M", "dataset_QA_M",
+                                 "dataset_NLI_B", "dataset_QA_B"],
                         help="The name of the task to train.")
     parser.add_argument("--data_dir",
                         default=None,
@@ -243,10 +243,10 @@ def main():
                         type=int,
                         default=1,
                         help="Number of updates steps to accumualte before performing a backward/update pass.")
-    # arguments = ['--task_name=rambler2011_json_single', '--data_dir=data/rambler2011_json/bert-single/loc1_вообще',
+    # arguments = ['--task_name=dataset_single', '--data_dir=data/dataset/bert-single/loc1_вообще',
     #              '--vocab_file=/media/anton/ssd2/data/datasets/language_models/rubert_cased_L-12_H-768_A-12_v2/vocab.txt',
     #              '--bert_config_file=/media/anton/ssd2/data/datasets/language_models/rubert_cased_L-12_H-768_A-12_v2/bert_config.json',
-    #              '--output_dir=results/rambler2011_json/single',
+    #              '--output_dir=results/dataset/single',
     #              '--init_checkpoint=/media/anton/ssd2/data/datasets/language_models/rubert_cased_L-12_H-768_A-12_v2/pytorch_model.bin']
     #
     # args = parser.parse_args(arguments)
@@ -287,11 +287,11 @@ def main():
 
     # prepare dataloaders
     processors = {
-        "rambler2011_json_single": Rambler2011_json_single_Processor,
-        "rambler2011_json_NLI_M": Rambler2011_json_NLI_M_Processor,
-        "rambler2011_json_QA_M": Rambler2011_json_QA_M_Processor,
-        "rambler2011_json_NLI_B": Rambler2011_json_NLI_B_Processor,
-        "rambler2011_json_QA_B": Rambler2011_json_QA_B_Processor
+        "dataset_single": Dataset_single_Processor,
+        "dataset_NLI_M": Dataset_NLI_M_Processor,
+        "dataset_QA_M": Dataset_QA_M_Processor,
+        "dataset_NLI_B": Dataset_NLI_B_Processor,
+        "dataset_QA_B": Dataset_QA_B_Processor
     }
 
     processor = processors[args.task_name]()

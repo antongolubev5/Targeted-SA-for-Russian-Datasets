@@ -61,8 +61,9 @@ class DataProcessor(object):
             return lines
 
 
-class Rambler2011_json_single_Processor(DataProcessor):
-    """Processor for the Sentihood data set."""
+class Dataset_single_Processor(DataProcessor):
+    """Processor for the
+    Sentihood data set."""
 
     def get_train_examples(self, data_dir):
         """See base class."""
@@ -101,7 +102,7 @@ class Rambler2011_json_single_Processor(DataProcessor):
         return examples
 
 
-class Rambler2011_json_NLI_M_Processor(DataProcessor):
+class Dataset_NLI_M_Processor(DataProcessor):
     """Processor for the Sentihood data set."""
 
     def get_train_examples(self, data_dir):
@@ -143,7 +144,7 @@ class Rambler2011_json_NLI_M_Processor(DataProcessor):
         return examples
 
 
-class Rambler2011_json_QA_M_Processor(DataProcessor):
+class Dataset_QA_M_Processor(DataProcessor):
     """Processor for the Sentihood data set."""
 
     def get_train_examples(self, data_dir):
@@ -185,7 +186,7 @@ class Rambler2011_json_QA_M_Processor(DataProcessor):
         return examples
 
 
-class Rambler2011_json_NLI_B_Processor(DataProcessor):
+class Dataset_NLI_B_Processor(DataProcessor):
     """Processor for the Sentihood data set."""
 
     def get_train_examples(self, data_dir):
@@ -227,7 +228,7 @@ class Rambler2011_json_NLI_B_Processor(DataProcessor):
         return examples
 
 
-class Rambler2011_json_QA_B_Processor(DataProcessor):
+class Dataset_QA_B_Processor(DataProcessor):
     """Processor for the Sentihood data set."""
 
     def get_train_examples(self, data_dir):
