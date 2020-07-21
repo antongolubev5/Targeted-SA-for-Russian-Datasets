@@ -1,0 +1,7 @@
+Strict_Accuracy	80.51
+F1_weighted	80.58
+F1_macro	70.21
+F1_micro	80.51
+AUC_score	83.83
+F1_macro_posneg	84.86
+F1_micro_posneg	85.5
