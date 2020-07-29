@@ -18,7 +18,7 @@ This repository provides a source code and data for the paper "Improving Results
 * argparse
 
 ## Step 1: data preparation
-All 5 datasets are already cleaned and preprocessed. If you are interested in raw data, corresponding links are provided in the article.
+All 5 datasets are already cleaned and preprocessed. If you are interested in raw data, corresponding links are provided in the paper.
 
 
 | Dataset       | Name |
