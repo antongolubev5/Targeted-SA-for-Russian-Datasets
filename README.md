@@ -1,6 +1,6 @@
 # Improving Results on Russian Sentiment Datasets
 
-This repository provides a source code and data for the paper "Improving results on Russian sentiment datasets" (Anton Golubev, Natalia Loukachevitch, AINL 2020)
+This repository provides a source code and data for the paper "Improving Results on Russian Sentiment Datasets" (Anton Golubev, Natalia Loukachevitch, AINL 2020)
 
 ## Requirements
 
