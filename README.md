@@ -73,3 +73,16 @@ python evaluate_all_problems.py \
 ```
 
 A table with chosen methods and all necessary metrics will be printed after evaluation. 
+
+## References
+
+```
+@misc{golubev2020improving,
+    title={Improving Results on Russian Sentiment Datasets},
+    author={Anton Golubev and Natalia Loukachevitch},
+    year={2020},
+    eprint={2007.14310},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+```
