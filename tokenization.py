@@ -9,7 +9,7 @@ from __future__ import absolute_import, division, print_function
 import collections
 import unicodedata
 
-import six
+#import six
 
 
 def convert_to_unicode(text):
